@@ -1,0 +1,17 @@
+name: Pipeline DevOps
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  teste:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Mensagem
+        run: echo "Pipeline funcionando com sucesso!"
